@@ -5,3 +5,4 @@ python3 manage.py makemigrations - создать миграции
 python3 manage.py sqlmigrate 'news 0001' - просмотр sql запроса
 python3 manage.py migrate - запуск миграций
 python3 manage.py shell - запуск консоли django
+python3 manage.py createsuperuser - создать суперпользователя
