@@ -23,7 +23,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb">
+        <schema name="main" object-types="constraint, table, index, view, dataset trigger, column" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb">
@@ -37,7 +41,10 @@
     <connection id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.news_news" active-filter-id="" />
+    <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.sqlite_sequence" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.auth_group" active-filter-id="" />
+    <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.auth_group_permissions" active-filter-id="" />
+    <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.news_news" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -110,7 +117,7 @@
           <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="false" />
-          <connect-automatically value="true" />
+          <connect-automatically value="false" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="true" />
           <environment-type value="default" />

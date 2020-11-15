@@ -1,6 +1,7 @@
 django-admin startproject 'mysite' - создать проект
-python manage.py runserver - запуск проекта
-python manage.py startapp 'news' - создать приложение
-python manage.py makemigrations - создать миграции
-python manage.py sqlmigrate 'news 0001' - просмотр sql запроса
-python manage.py migrate - запуск миграций
+python3 manage.py runserver - запуск проекта
+python3 manage.py startapp 'news' - создать приложение
+python3 manage.py makemigrations - создать миграции
+python3 manage.py sqlmigrate 'news 0001' - просмотр sql запроса
+python3 manage.py migrate - запуск миграций
+python3 manage.py shell - запуск консоли django
