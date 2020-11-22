@@ -24,8 +24,8 @@
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes>
-      <connection connection-id="ad85d604-4a95-4720-99f9-385fb9c5c848">
-        <schema name="testDB" object-types="constraint, column, dataset trigger, function, index, view, table, procedure" />
+      <connection connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb">
+        <schema name="main" object-types="dataset trigger, table, index, column, constraint" />
       </connection>
     </loaded-nodes>
   </component>
@@ -38,7 +38,9 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" object-ref="schemas/main/tables/news_news" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" />
@@ -52,6 +54,7 @@
     <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.auth_group_permissions" active-filter-id="" />
     <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.news_category" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.news_news" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.django_session" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
