@@ -6,17 +6,36 @@ from django.urls import reverse_lazy
 from .utils import Mymixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.paginator import Paginator
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib import messages
+
+def register(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request,'Вы успешно зарегистрировались')
+            return redirect('login')
+        else:
+            messages.error(request,'Ошибка регистрации')
+    else:
+        form = UserCreationForm()
+    return render(request, "news/register.html", {'form': form})
+
+
+def login(request):
+    return render(request, "news/login.html")
+
 
 def test(request):
-    objects = [ '1q','2w','3e','4r','5t','6y','7u','8i']
-    paginator = Paginator(objects,2)
+    objects = ['1q', '2w', '3e', '4r', '5t', '6y', '7u', '8i']
+    paginator = Paginator(objects, 2)
     page_mum = request.GET.get('page')
     page_objects = paginator.get_page(page_mum)
-    return render(request,'news/test.html',{'page_obj':page_objects})
+    return render(request, 'news/test.html', {'page_obj': page_objects})
 
 
-
-class HomeNews(Mymixin,ListView):
+class HomeNews(Mymixin, ListView):
     model = News
     template_name = 'news/home_news_list.html'
     context_object_name = 'news'
@@ -35,7 +54,7 @@ class HomeNews(Mymixin,ListView):
         return News.objects.filter(is_published=True).select_related('category')
 
 
-class NewsByCategory(Mymixin,ListView):
+class NewsByCategory(Mymixin, ListView):
     model = News
     template_name = 'news/home_news_list.html'
     context_object_name = 'news'
@@ -58,7 +77,7 @@ class ViewNews(DetailView):
     context_object_name = 'news_item'
 
 
-class CreateNews(LoginRequiredMixin,CreateView):
+class CreateNews(LoginRequiredMixin, CreateView):
     form_class = NewsForm
     template_name = 'news/add_news.html'
     # success_url = reverse_lazy('home')
