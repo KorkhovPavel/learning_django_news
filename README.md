@@ -11,4 +11,9 @@
  
  Данные храняться в sqlite3, так же пробовал в mysql все работает.
  
+ ![alt text](mysite/Screenshot/Screenshot 1.png "Описание будет тут")
+ 
+ 
+ ![alt text](mysite/Screenshot/Screenshot 2.png "Описание будет тут")
+ 
 
