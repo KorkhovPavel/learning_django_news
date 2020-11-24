@@ -20,6 +20,8 @@
  
  Данные храняться в sqlite3, так же пробовал в mysql все работает.
  
+ Шаблон https://getbootstrap.com/
+ 
  
  ![alt text](mysite/Screenshot/Screenshot1.png )
  
