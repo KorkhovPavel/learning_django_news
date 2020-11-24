@@ -24,7 +24,7 @@
     <img src="https://picsum.photos/id/1060/300/235/?blur=2" alt="" class="mr-3">
     {% endif %}
     <h5 class="card-title \">{{ news_item.title }}</h5>
-    <p class="card-text">{{ news_item.content }}</p>
+    <p class="card-text">{{ news_item.content|safe|linebreaks}}</p>
   </div>
   <div class="card-footer text-muted">
     {{ news_item.created_at|date:"Y-m-d H:i:s" }}
