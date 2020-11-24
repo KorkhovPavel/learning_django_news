@@ -1,8 +1,10 @@
-# DjangoLearning
+# learning_django_news
 
 Реализовано в учебных целях.
 
 информация взята с https://v32.underver.se/
+
+Информационный сайт.
 
 Функционал:
 
