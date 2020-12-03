@@ -23,6 +23,7 @@ urlpatterns = [
     path('captcha/', include('captcha.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('', include('news.urls')),
+    path('test/', include('testapp.urls')),
 ]
 
 if settings.DEBUG:
