@@ -23,7 +23,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb">
+        <schema name="main" object-types="column, view, index, constraint, dataset trigger, table" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb">
@@ -44,6 +48,7 @@
     <filter-actions connection-id="ad85d604-4a95-4720-99f9-385fb9c5c848" dataset="testDB.news_news" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ad85d604-4a95-4720-99f9-385fb9c5c848" dataset="testDB.news_category" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.auth_user" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.testapp_rubric" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.sqlite_sequence" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.auth_group" active-filter-id="" />
     <filter-actions connection-id="066ef2d4-61c6-4e8a-bbf9-17e9a26bddcb" dataset="main.auth_group_permissions" active-filter-id="" />

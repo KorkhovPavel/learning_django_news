@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'ckeditor',
     'captcha',
+    'mptt',
     'testapp.apps.TestappConfig',
     'ckeditor_uploader',
     'news.apps.NewsConfig'
