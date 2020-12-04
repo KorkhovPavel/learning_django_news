@@ -13,7 +13,6 @@ class NewsAdminForm(forms.ModelForm):
         fields = '__all__'
 
 
-
 class NewsAdmin(admin.ModelAdmin):
     form = NewsAdminForm
     list_display = ('id', 'title', 'created_at', 'updated_at', 'is_published', 'category', 'get_photo')
